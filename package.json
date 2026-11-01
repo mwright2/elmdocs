@@ -1,18 +1,11 @@
 {
   "name": "elm-docs",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
   "scripts": {
     "start": "elm reactor",
     "format": "elm-format src/ --yes"
   },
   "devDependencies": {
-    "@types/bun": "latest",
     "elm": "^0.19.3-0",
     "elm-format": "^0.8.8"
-  },
-  "peerDependencies": {
-    "typescript": "^7"
   }
 }
