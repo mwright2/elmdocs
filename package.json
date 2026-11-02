@@ -2,10 +2,16 @@
   "name": "elm-docs",
   "scripts": {
     "start": "elm reactor",
+    "build:elm": "elm make src/Main.elm --output=public/elm.js",
+    "build:css": "tailwindcss -i src/main.css -o public/style.css",
+    "build": "npm run build:elm && npm run build:css",
+    "watch:css": "tailwindcss -i src/main.css -o public/style.css --watch",
     "format": "elm-format src/ --yes"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
     "elm": "^0.19.3-0",
-    "elm-format": "^0.8.8"
+    "elm-format": "^0.8.8",
+    "tailwindcss": "^4.3.3"
   }
 }

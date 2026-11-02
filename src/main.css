@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sheet: Arial, sans-serif;
+
+  --color-sheet: #1e1f20;
+  --color-ink: #e3e3e3;
+  --color-gridline: #333537;
+  --color-header: #282a2c;
+  --color-header-line: #444746;
+  --color-header-ink: #c4c7c5;
+  --color-corner: #3c4043;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background-color: var(--color-sheet);
+    color: var(--color-ink);
+  }
+}
