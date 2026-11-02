@@ -107,7 +107,7 @@ columnHeader : Int -> Int -> Html msg
 columnHeader selectedColumn columnNumber =
     th
         [ headerBase
-        , class "top-0 z-10 min-w-25 bg-header"
+        , class "top-0 z-10 min-w-25"
         , headerBackground (columnNumber == selectedColumn)
         ]
         [ text (columnLabel columnNumber) ]
@@ -126,7 +126,7 @@ rowHeader : Int -> Int -> Html msg
 rowHeader selectedRow rowNumber =
     th
         [ headerBase
-        , class "left-0 z-10 min-w-12 bg-header"
+        , class "left-0 z-10 min-w-12"
         , headerBackground (rowNumber == selectedRow)
         ]
         [ text (String.fromInt rowNumber) ]
