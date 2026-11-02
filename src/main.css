@@ -10,6 +10,8 @@
   --color-header-line: #444746;
   --color-header-ink: #c4c7c5;
   --color-corner: #3c4043;
+  --color-header-active: #394457;
+  --color-selection: #8ab4f8;
 }
 
 @layer base {
